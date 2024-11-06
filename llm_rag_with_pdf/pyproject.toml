@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "llm-rag-with-pdf"
+version = "0.1.0"
+description = ""
+authors = ["ted park <itstedpark@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+gradio = "^5.5.0"
+langchain-openai = "^0.2.5"
+langchain = "^0.3.7"
+langchain-community = "^0.3.5"
+chromadb = "^0.5.17"
+pypdf = "^5.1.0"
+pymupdf = "^1.24.13"
+transformers = "^4.46.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
