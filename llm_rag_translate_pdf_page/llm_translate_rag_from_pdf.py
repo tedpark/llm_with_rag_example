@@ -35,7 +35,7 @@ class PDFChatbot:
 
         if self.api_key:
             os.environ["OPENAI_API_KEY"] = self.api_key
-            self.llm = ChatOpenAI(model_name="gpt-4", temperature=0)
+            self.llm = ChatOpenAI(model_name="gpt-4o", temperature=0)
 
     def set_api_key(self, api_key):
         """Function to set or update the API key"""
@@ -277,4 +277,4 @@ def create_interface():
 
 if __name__ == "__main__":
     demo = create_interface()
-    demo.launch(debug=True)
+    demo.launch(share=True)
